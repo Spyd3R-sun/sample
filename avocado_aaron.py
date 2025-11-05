@@ -18,7 +18,7 @@ st.set_page_config(
 # Load the dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv('avo.csv')
+    data = pd.read_csv(r"C:\Users\Aaron Tan\OneDrive\文档\Aaron(DSTB)\avo.csv")
     return data
 
 data = load_data()
@@ -96,7 +96,7 @@ if page == "Introduction":
     """)
     
     # Display avocado image
-    st.image("avocado.jpg", caption="Fresh Avocados", use_column_width=True)
+    st.image('avocado.jpg', caption="Fresh Avocados", use_column_width=True)
     
     # Key Insights
     st.subheader("🔍 Quick Insights")
